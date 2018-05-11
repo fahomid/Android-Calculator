@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightGrey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/app_heading"
+            style="?attr/toolbarStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/calculator_by_fahomid"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_restore_white_36dp"
+            android:onClick="backToMain"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/resultString"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical|end"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/currentResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical|end"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:text="@string/default_result_text"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:background="@color/silver"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightGrey"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="3dp">
+
+            <Button
+                android:id="@+id/m_mc"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:linksClickable="false"
+                android:longClickable="false"
+                android:text="@string/button_memory_clear"
+                android:textColor="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/m_mr"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:linksClickable="false"
+                android:longClickable="false"
+                android:text="@string/button_memory_recall"
+                android:textColor="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/m_plus"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:linksClickable="false"
+                android:longClickable="false"
+                android:text="@string/button_memory_plus_save"
+                android:textColor="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/m_minus"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:linksClickable="false"
+                android:longClickable="false"
+                android:text="@string/button_memory_minus_save"
+                android:textColor="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/m_save"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:linksClickable="false"
+                android:longClickable="false"
+                android:text="@string/button_memory_save"
+                android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/historyRecycleView"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="@color/lightGrey"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/noHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/there_s_no_history_yet"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/historyDelete"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_delete_forever_black_36dp"
+            android:onClick="clearHistory"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

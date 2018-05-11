@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="button_one">1</string>
+    <string name="button_two">2</string>
+    <string name="button_three">3</string>
+    <string name="button_four">4</string>
+    <string name="button_five">5</string>
+    <string name="button_six">6</string>
+    <string name="button_seven">7</string>
+    <string name="button_eight">8</string>
+    <string name="button_nine">9</string>
+    <string name="button_zero">0</string>
+    <string name="button_equal">=</string>
+    <string name="button_plus">+</string>
+    <string name="button_minus">-</string>
+    <string name="button_multiplication">×</string>
+    <string name="button_division">÷</string>
+    <string name="button_point">.</string>
+    <string name="button_memory_recall">MR</string>
+    <string name="button_memory_clear">MC</string>
+    <string name="button_memory_plus_save">M+</string>
+    <string name="button_memory_minus_save">M-</string>
+    <string name="button_memory_save">MS</string>
+    <string name="button_clear_last">\u232b</string>
+    <string name="button_percentage">%</string>
+    <string name="default_result_text">0</string>
+
+
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multiplication">*</string>
+    <string name="division">/</string>
+    <string name="point">.</string>
+    <string name="button_root">√</string>
+    <string name="button_square">x²</string>
+    <string name="button_fraction">⅟x</string>
+    <string name="button_clear_entry">CE</string>
+    <string name="button_clear_all">C</string>
+    <string name="button_plus_minus">±</string>
+    <string name="title_activity_history">history</string>
+    <string name="dividebyzero">Cannot divide by zero</string>
+    <string name="calculator_by_fahomid">Calculator by Fahomid</string>
+    <string name="there_s_no_history_yet">There\'s no history yet</string>
+
+</resources>
